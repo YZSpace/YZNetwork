@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YZNetwork'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'YZNetwork是基于AFNetworking~>3.2封装的iOS端简易网络库，通过创建请求对象的方式处理网络接口.'
 
 # This description is used to generate tags and improve search results.
