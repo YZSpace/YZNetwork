@@ -7,6 +7,7 @@
 //
 
 #import "YZViewController.h"
+#import "YZLoginRequest.h"
 
 @interface YZViewController ()
 
@@ -24,6 +25,13 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)btnLoginClick:(UIButton *)sender {
+    YZLoginRequest *request = [[YZLoginRequest alloc] initUserName:@"131xxxx1234" withPassword:@"123"];
+    [request startExampleRequestWithCompletionBlock:^(__kindof YZExampleResponseModel * _Nonnull responseModel) {
+        
+    }];
 }
 
 @end
